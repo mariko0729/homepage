@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/homepage.css">
+    <title>My Homepage</title>
+    <style>
+    body {background-color:#CBE1D4;}
+    </style>
+     <link rel="icon" type="img/cat.png" href="img/cat.png">
+</head>
+
+<body text="#69432D">
+
+    <script>
+        alert('こんにちは！');
+      </script>
+
+<div class="main_visual">
+<img src="img/mainphoto.jpg" alt="メイン画像" width="1510px" height="740px">
+</div>
+
+<div id="kurione"> 
+    <img src="img/kurione.png" alt="クリオネ" width="50px" height="50px">
+</div>
+
+<div style="position:absolute; top:800px; left:600px">
+    <img src="img/mozi.png" alt="文字" width="300px" height="200px">
+</div>
+
+<br>
+
+<style>
+    section {
+        margin: 180px;
+        padding: 50px;
+        width: 480px;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        background-color: #00A585;
+    }
+    </style>
+    <section>
+        <h1>名前：岩本　真理子（いわもと　まりこ）</h1>
+        <h2>生年月日：1998/07/29</h2>
+        <h2>出身地：埼玉県</h2>
+        <h2>出身校：大妻女子大学</h2>
+        <h2>趣味：飼い猫と遊ぶこと、動画視聴</h2>
+    </section>
+
+    <div style="position:absolute; top:1020px; left:850px">
+        <img src="img/photo.jpg" alt="写真" width="300px" height="400px">
+    </div>
+
+    <h1 style=text-align:center>将来は『PM』になりたい</h1>
+    <h2 style=text-align:center>私の強みは「課題に向き合い改善することができる」ことです。<br>
+    この強みを生かして、問題にぶつかったときに<br>最善の解決策を考えることができるそんなPMになりたいです。<br>
+    また、周りから気軽に頼って貰え、仕事がちゃんと円滑に進むよう周りを纏め、<br>指示を出したりすることができるのが目標です。</h2>
+
+    <div style="position:absolute; top:1900px; left:500px">
+        <img src="img/pc.jpg" alt="写真" width="500px" height="250px" style="margin-bottom:50px;">
+    </div>
+
+    
+</body>
+
+<div id="page-top">
+    <a id="move-page-top"><img src="img/top.png" alt="トップ" width="300px" height="300px"></a>
+    </div>
+    <script>
+    $(window).scroll(function(){
+    var now = $(window).scrollTop();
+    if(now > 500){
+    $("#page-top").fadeIn("slow");
+    }else{
+    $("#page-top").fadeOut("slow");
+    }
+    });
+    $("#move-page-top").click(function(){
+    $("html,body").animate({scrollTop:0},"slow");
+    });
+    </script>
+
+</html>

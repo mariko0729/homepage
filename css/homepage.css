@@ -1,0 +1,55 @@
+/*　TOP画像 */
+img {
+    margin: auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/*クリオネ動くアニメーション*/
+
+html, body {height: 100%;}
+body{
+    margin: 0;
+    background: url(mainphoto.jpg);
+    background-size: cover;
+} 
+
+ #kurione{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 2s;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+#kurione:hover {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+/* ページトップへ戻るボタン */
+#page-top {
+    display:none;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    margin: 0;
+    }
+    #move-page-top{
+    opacity: 0.7; /* ふだんのボタンの透明度 */
+    display:block;
+    cursor:pointer;
+    }
+    /* ポインタを重ねた時 */
+    #move-page-top a:hover{
+    opacity: 1.0; /* ポインタを重ねたときの透明度 */
+    }
+    #page-top img {
+    width:100px;
+    height:auto;
+    }
+
+    body {
+        padding-bottom:500px;
+        }

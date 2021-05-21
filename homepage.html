@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+    
+    <div class="loading">
+        <img src="img/loading.gif" />
+      </div>
+      
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +19,12 @@
 </head>
 
 <body text="#69432D">
+
+    <script>
+        $(window).on('load', function(){
+	$('.loading').fadeOut();	
+});
+    </script>
 
     <script>
         alert('こんにちは！');
@@ -64,8 +75,11 @@
         <img src="img/pc.jpg" alt="写真" width="500px" height="250px" style="margin-bottom:50px;">
     </div>
 
+</div>
     
 </body>
+
+<!-- トップページにスクロールするボタン -->
 
 <div id="page-top">
     <a id="move-page-top"><img src="img/top.png" alt="トップ" width="300px" height="300px"></a>
